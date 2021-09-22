@@ -10,6 +10,7 @@ body {
 nav {
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 .searchform {
   width: 48%;
@@ -132,7 +133,7 @@ h1 {
   top: 0;
   right: 0;
   visibility: hidden;
-  z-index: 2;
+  z-index: 4;
   animation: animate 0.3s forward ease-in;
 }
 .toggler:checked ~ .menu {
@@ -147,6 +148,10 @@ h1 {
 
 main h2 a:hover {
   text-decoration: underline;
+}
+.globe:hover {
+  background: #8b8888;
+  color: #fff;
 }
 .book {
   transition: all 0.1s ease-in;
@@ -298,7 +303,38 @@ main h2 a:hover {
   width: 100%;
   height: 40%;
 }
-
+.feature-safe,
+.feature-quick,
+.feature-reading,
+.feature-cloud {
+  border: 1px solid #999;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.feature-quick {
+  padding: 1rem 1.5rem;
+}
+.trial {
+  border-radius: 30px;
+}
+.card {
+  width: 280px;
+  transition: all 0.2s ease-in;
+  transform: scale(0.9);
+  z-index: 1;
+}
+.card > div,
+.card ul li:last-child {
+  border-bottom: 1px solid #999;
+  padding-bottom: 2rem;
+}
+.card ul li {
+  list-style: disc;
+}
+.card:hover {
+  /* width: 320px; */
+  transform: scale(1.1);
+}
 @media screen and (max-width: 420px) {
   body {
     font-size: 14px;
