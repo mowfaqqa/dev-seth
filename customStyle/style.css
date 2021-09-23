@@ -12,9 +12,14 @@ nav {
   top: 0;
   z-index: 3;
 }
-.searchform {
+.searchform,
+.searchform2 {
   width: 48%;
   position: relative;
+}
+.searchform2 {
+  width: 90%;
+  margin: auto;
 }
 .searchform input {
   padding: 10px;
@@ -36,7 +41,13 @@ li {
 h1 {
   font-weight: bold;
 }
-
+.writeUp {
+  position: relative;
+}
+.writeUp button {
+  position: absolute;
+  right: 3%;
+}
 /* utility classes */
 .max-container {
   max-width: 1200px;
@@ -140,10 +151,14 @@ h1 {
   visibility: visible;
 }
 
-.searchIcon {
+.searchIcon,
+.searchIcon2 {
   position: absolute;
   top: 0.9rem;
   right: 1rem;
+}
+.searchIcon2 {
+  top: 1.4rem;
 }
 
 main h2 a:hover {
@@ -335,6 +350,9 @@ main h2 a:hover {
   /* width: 320px; */
   transform: scale(1.1);
 }
+.responsive-form {
+  display: none;
+}
 /* footer {
   display: flex;
   flex-direction: row;
@@ -350,6 +368,14 @@ main h2 a:hover {
   }
   .searchform {
     display: none;
+  }
+  .responsive-form {
+    display: none;
+  }
+
+  .searchIcon2 {
+    top: 35%;
+    right: -8%;
   }
   .others {
     display: none;

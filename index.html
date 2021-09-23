@@ -49,11 +49,11 @@
                <!-- <a href="#" class="text-dark fs-6 mx-2"><i class="text-danger fas fa-heart"></i> Donate</a>
                <a href="./premium.html" class="text-brightGreen mx-2 fs-6"> Premium</a> -->
                <a href="/signIn.html" class="btn btn-primary fs-6 ml-2 text-light"> Sign-In</a>
-               <a href="#" class="globe btn btn-gray text-light mx-1"><i class="text-dark fas fa-globe"></i></a>   
+               <!-- <a href="#" class="globe btn btn-gray text-light mx-1"><i class="text-dark fas fa-globe"></i></a>    -->
             </div>
             <div class="d-flex justify-content-center align-items-center">
-               <a href="#" class="btn btn-gray text-light mx-1 d-sm-block d-lg-none"><i class="text-dark fas fa-globe"></i></a>
-               <a href="#" class="d-sm-block d-lg-none text-secondary"><i class="fs-4 text-seconadry fas fa-search"></i></a>
+               <!-- <a href="#" class="btn btn-gray text-light mx-1 d-sm-block d-lg-none"><i class="text-dark fas fa-globe"></i></a> -->
+               <a href="#" class="responsive-searchbar d-sm-block d-lg-none text-secondary"><i class="fs-4 text-seconadry fas fa-search"></i></a>
             </div>
 
         </div>
@@ -63,8 +63,41 @@
    <div class="max-container">
       <div class="row">
          <main class=" col-sm-12 col-lg-7 p-3 mt-4">
+            
+            <form class="responsive-form py-1">
+               <input type="text" class=" shadow-sm pb-2 form-control " placeholder="Search for Books, tutorials, manuals, and authors in ---- files">
+               <a href="#" class="btn btn-light"><i class="fs-4 text-primary responsiveSearchIcon fas fa-search"></i></a>
+            </form>
+
+            <div class="bg-light p-3 my-4">
+               <h3>Upload Book</h3>
+               <p class="fs-7">Please fill the form below to upload a book</p>
+               <form id="uploadForm">
+                  <div class="formGroup p-2">
+                     <label for="university" class="form-label">University</label>
+                     <select name="university" id="university " class="form-control">
+                        <option value="university-of-jos">University of Jos</option>
+                        <option value="Ahmadu-Bello-University">Ahmadu Bello University</option>
+                        <option value="University-of-Abuja">University of Abuja</option>
+                     </select>
+                  </div>
+                  <div class="formGroup p-2">
+                     <label for="dept" class="form-label">Department</label>
+                     <input type="text" name="dept" id="dept" class="form-control">
+                  </div>
+                  <div class="formGroup p-2">
+                     <label for="bookFile" class="form-label">Book</label>
+                     <input type="file" name="dept" id="dept" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-secondary mt-3 fs-7 w-100">Upload File</button>
+               </form>
+            </div>
+            <div class=" writeUp bg-light p-1 mt-3">
+               <button type="submit" class="close btn btn-light text-dark"><i class="fas fa-times"></i></button>
+               <p class="fs-7 mt-3 p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis dignissimos cumque laborum deleniti impedit quis, saepe aliquid exercitationem corrupti vel fugiat molestias architecto reprehenderit animi enim ut nulla incidunt maiores dolorum sit commodi et cupiditate necessitatibus! Laborum excepturi perferendis nesciunt! Accusamus, ipsum? Pariatur dolorem rem tenetur quas temporibus quia?</p>
+            </div>
             <div>
-               <h2 class="text-dark fs-4"><i class="fas fa-gem"></i><a href="#" class="text-dark"> Best Books of the Week</a></h2>
+               <h2 class="text-dark fs-4 mt-5"><i class="fas fa-gem"></i><a href="#" class="text-dark"> Best Books of the Week</a></h2>
                <div class="books roboto">
                   <div class="bg-light d-flex align-items-center my-3 book">
                      <img src="./assets/img1.jpg" alt="img">
@@ -254,6 +287,12 @@
                <a href="#" class="mx-auto btn btn-gray"> 6</a>
                <a href="#" id="next" class="mx-auto" >Next <i class="fas fa-chevron-circle-right"></i></a>
             </div>
+            
+            <form class="searchform2 py-3">
+               <input type="text" class="search-input shadow-sm pb-2 form-control " placeholder="Search for Books, tutorials, manuals, and authors in ---- files">
+               <a href=""><i class="fs-4 text-primary searchIcon2 fas fa-search"></i></a>
+            </form>
+
                <!-- Slider -->
                <div class="view view-carousel mt-3">
                   <h4 class="view-title">Educational Videos</h4>

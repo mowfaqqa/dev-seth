@@ -108,3 +108,23 @@ jQuery(window).on("resize", function () {
     });
   }, 50);
 });
+
+
+const close = document.querySelector('.close')
+
+close.addEventListener('click', (e) =>{
+  const writeUp = document.querySelector('.writeUp')
+    writeUp.style.display = 'none'
+
+  e.preventDefault()
+})
+
+
+// displaying search input when responsive after serach icon on nav-bar is clicked on
+const responsiveSearchBar = document.querySelector('.responsive-searchbar')
+responsiveSearchBar.addEventListener('click', (e) =>{
+  const responsiveForm = document.querySelector('.responsive-form')
+    responsiveForm.style.display = 'flex'
+
+  e.preventDefault()
+})
